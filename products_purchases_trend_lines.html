@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="Qoyod - قيود">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- web page icon-->
+    <link href="assets/logo_57.png" sizes="57x57" rel="icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;400;600;800&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awosome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--/normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style sheet file-->
+    <link rel="stylesheet" href="css/main.css">
+    <title> تقرير مشتريات المنتجات</title>
+</head>
+
+<body class="pro-pur-body">
+
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html">التقارير</a> <i class="fa fa-angle-double-left client_primary_color"></i></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#"> تقرير مشتريات المنتجات</a> </li>
+        </ol>
+    </nav>
+    <div class="container">
+        <section class="content">
+
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="add_subscription_form add-products-form clearfix">
+                    <div class="add_subscription report_subscription">
+
+                        <section class="form-content">
+                            <form class="form" action="#" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+
+                                <div class="form_row">
+                                    <label for="">من</label>
+                                    <div class="form_field ">
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                            <div class="input-group-prepend">
+                                                <span class="datepicker-toggle">
+                                                    <span class="datepicker-toggle-button"></span>
+                                                <input type="date" class="datepicker-input">
+                                                <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="form_row">
+                                    <div class="form_field">
+                                        <select name="query[dimension][type]" id="period_dimension_type" class="selectpicker q_dimension_type">
+                            <option value="">مقارنة بفترة سابقة</option>
+                            <option value="previous_year">السنة الماضية</option>
+                            <option value="previous_month">الشهر الماضي</option>
+                            <option value="previous_quarter">الربع السابق</option>
+                            <option value="previous_week">الأسبوع السابق</option>
+                            <option value="previous_day">اليوم السابق</option>
+                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_row">
+                                    <div class="form_field ">
+                                        <select name="query[dimension][query][]" id="period_dimension_query" class="selectpicker">
+                            <option value="">عدد الفترات الزمنية</option>
+                            <option selected="selected" value="Period 1">فترة</option>
+                            <option value="Period 2">فترتان</option>
+                            <option value="Period 3">3 فترات</option>
+                            <option value="Period 4">4 فترات</option>
+                            <option value="Period 5">5 فترات</option>
+                            <option value="Period 6">6 فترات</option>
+                            <option value="Period 7">7 فترات</option>
+                            <option value="Period 8">8 فترات</option>
+                            <option value="Period 9">9 فترات</option>
+                            <option value="Period 10">10 فترات</option>
+                            <option value="Period 11">11 فترة</option>
+                            <option value="Period 12">12 فترة</option>
+                            <option value="Period 13">13 فترة</option>
+                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_row">
+                                    <div class="form_field ">
+                                        <select name="category" id="category" class="selectpicker"><option value="">صنف المنتج</option><option value="1">الصنف الأساسي</option></select>
+                                    </div>
+                                </div>
+
+                                <div class="form_row search  ">
+                                    <input type="hidden" name="filter" id="filter" value="true">
+                                    <button name="button" type="submit" class="btn filter-btn">
+        <i class="fas fa-filter"></i> بحث</button>
+                                    <a class="btn products-reset-btn">
+                                        <i class="fa fa-undo"></i>إعادة تعيين
+                                    </a>
+                                </div>
+
+                            </form>
+                        </section>
+                    </div>
+                    <div class="reports-header text-center">
+                        <h3>تقرير مشتريات المنتجات</h3>
+                        <h6>eee</h6>
+                        <h5>
+                            في <span> 2021-11-17</span>
+                        </h5>
+                        <h5>
+                            <h5> جميع الفئات</h5>
+                        </h5>
+                    </div>
+                    <div id="chartContainer2" data-highcharts-chart="0">
+                        <div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 1263px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:'&quot;'Lucida Grande'&quot;', '&quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1303" height="400"><desc>Created with Highcharts 4.2.3</desc><defs><clipPath id="highcharts-1"><rect x="0" y="0" width="1247" height="309"></rect></clipPath></defs><rect x="0" y="0" width="1303" height="400" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 10 319.5 L 1257 319.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 10 268.5 L 1257 268.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 10 216.5 L 1257 216.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 10 165.5 L 1257 165.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 10 113.5 L 1257 113.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 10 62.5 L 1257 62.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 10 9.5 L 1257 9.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 9.5 319 L 9.5 329" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 1257.5 319 L 1257.5 329" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 10 319.5 L 1257 319.5" stroke="#C0D0E0" stroke-width="1" zIndex="7"></path></g><g class="highcharts-axis" zIndex="2"></g><g class="highcharts-series-group" zIndex="3"><path fill="#7cb5ec" fill-opacity="0.25" zIndex="-1" d="M 633 306.94 C 646.32 306.94 646.32 326.94 633 326.94 C 619.68 326.94 619.68 306.94 633 306.94 Z"></path><path fill="#434348" fill-opacity="0.25" zIndex="-1" d="M 633 57.68000000000001 C 646.32 57.68000000000001 646.32 77.68 633 77.68 C 619.68 77.68 619.68 57.68000000000001 633 57.68000000000001 Z"></path><path fill="#90ed7d" fill-opacity="0.25" zIndex="-1" d="M 633 302.82 C 646.32 302.82 646.32 322.82 633 322.82 C 619.68 322.82 619.68 302.82 633 302.82 Z"></path><path fill="#f7a35c" fill-opacity="0.25" zIndex="-1" d="M 633 306.94 C 646.32 306.94 646.32 326.94 633 326.94 C 619.68 326.94 619.68 306.94 633 306.94 Z"></path><path fill="#8085e9" fill-opacity="0.25" zIndex="-1" d="M 633 306.94 C 646.32 306.94 646.32 326.94 633 326.94 C 619.68 326.94 619.68 306.94 633 306.94 Z"></path><g class="highcharts-series highcharts-series-0" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 623.5 306.94" stroke="#7cb5ec" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 613.5 306.94 L 623.5 306.94 L 633.5 306.94" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-0 highcharts-tracker" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-2)" style=""><path fill="#7cb5ec" d="M 623 300.94 C 630.992 300.94 630.992 312.94 623 312.94 C 615.008 312.94 615.008 300.94 623 300.94 Z" stroke-width="1" stroke="#FFFFFF"></path></g><g class="highcharts-series highcharts-series-1" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 623.5 57.68000000000001" stroke="#434348" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 613.5 57.68000000000001 L 623.5 57.68000000000001 L 633.5 57.68000000000001" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-1 highcharts-tracker" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-2)" style=""><path fill="#434348" d="M 623 51.68000000000001 L 629 57.68000000000001 623 63.68000000000001 617 57.68000000000001 Z" stroke-width="1" stroke="#FFFFFF"></path></g><g class="highcharts-series highcharts-series-2" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 623.5 302.82" stroke="#90ed7d" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 613.5 302.82 L 623.5 302.82 L 633.5 302.82" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-2 highcharts-tracker" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-2)" style=""><path fill="#90ed7d" d="M 617 296.82 L 629 296.82 629 308.82 617 308.82 Z" stroke-width="1" stroke="#FFFFFF"></path></g><g class="highcharts-series highcharts-series-3" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 623.5 306.94" stroke="#f7a35c" stroke-width="2" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 613.5 306.94 L 623.5 306.94 L 633.5 306.94" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-3 highcharts-tracker" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-2)" style=""><path fill="#f7a35c" d="M 623 300.94 L 629 312.94 617 312.94 Z" stroke-width="1" stroke="#FFFFFF"></path></g><g class="highcharts-series highcharts-series-4" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-1)"><path fill="none" d="M 623.5 306.94" stroke="#8085e9" stroke-width="3" zIndex="1" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 613.5 306.94 L 623.5 306.94 L 633.5 306.94" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-4 highcharts-tracker" zIndex="0.1" transform="translate(10,10) scale(1 1)" clip-path="url(#highcharts-2)" style=""><path fill="#8085e9" d="M 617 300.94 L 629 300.94 623 312.94 Z" stroke-width="1" stroke="#FFFFFF"></path></g></g><g class="highcharts-legend" zIndex="7" transform="translate(490,356)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#7cb5ec" stroke-width="2"></path><path fill="#7cb5ec" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path></g><g class="highcharts-legend-item" zIndex="1" transform="translate(66,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#434348" stroke-width="2"></path><path fill="#434348" d="M 8 7 L 12 11 8 15 4 11 Z"></path></g><g class="highcharts-legend-item" zIndex="1" transform="translate(137,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#90ed7d" stroke-width="2"></path><path fill="#90ed7d" d="M 4 7 L 12 7 12 15 4 15 Z"></path></g><g class="highcharts-legend-item" zIndex="1" transform="translate(200,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#f7a35c" stroke-width="2"></path><path fill="#f7a35c" d="M 8 7 L 12 15 4 15 Z"></path></g><g class="highcharts-legend-item" zIndex="1" transform="translate(271,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#8085e9" stroke-width="2"></path><path fill="#8085e9" d="M 4 7 L 12 7 8 15 Z"></path></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="633.5" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:1237px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="338" opacity="1">2021-11-19</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="322" opacity="1">0</text><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="270" opacity="1">25</text><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="219" opacity="1">50</text><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="167" opacity="1">75</text><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="116" opacity="1">100</text><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="64" opacity="1">125</text><text x="1272" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:420px;text-overflow:clip;" text-anchor="start" transform="translate(0,0)" y="13" opacity="1">150</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(529,30)" opacity="1" visibility="visible"><path fill="none" d="M 3.5 0.5 L 86.5 0.5 C 89.5 0.5 89.5 0.5 89.5 3.5 L 89.5 121.5 C 89.5 124.5 89.5 124.5 86.5 124.5 L 3.5 124.5 C 0.5 124.5 0.5 124.5 0.5 121.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 86.5 0.5 C 89.5 0.5 89.5 0.5 89.5 3.5 L 89.5 121.5 C 89.5 124.5 89.5 124.5 86.5 124.5 L 3.5 124.5 C 0.5 124.5 0.5 124.5 0.5 121.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 86.5 0.5 C 89.5 0.5 89.5 0.5 89.5 3.5 L 89.5 121.5 C 89.5 124.5 89.5 124.5 86.5 124.5 L 3.5 124.5 C 0.5 124.5 0.5 124.5 0.5 121.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 86.5 0.5 C 89.5 0.5 89.5 0.5 89.5 3.5 L 89.5 121.5 C 89.5 124.5 89.5 124.5 86.5 124.5 L 3.5 124.5 C 0.5 124.5 0.5 124.5 0.5 121.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path></g></svg>
+                            <div class="highcharts-tooltip" style="position: absolute; left: 529px; top: 30px; opacity: 1; visibility: visible;">
+                                <span style="position: absolute; font-family: '&quot;'Lucida Grande'&quot;', '&quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif; font-size: 10px; white-space: nowrap; color: rgb(51, 51, 51); margin-left: 0px; margin-top: 0px; left: -20px; top: 8px;"
+                                    zindex="1"><span style="font-size: 10px">2021-11-19</span><br>
+                                <span style="color:#7cb5ec">●</span> سالم: <b>1</b><br><span style="color:#434348">●</span> كمبيوتر: <b>122</b><br>
+                                <span style="color:#90ed7d">●</span> test:
+                                <b>3</b><br><span style="color:#f7a35c">●</span> 8787: <b>1</b><br>
+                                <span style="color:#8085e9">●</span> المنتج: <b>1</b><br></span>
+                            </div>
+                            <div class="highcharts-legend" style="position: absolute; left: 490px; top: 356px;">
+                                <div style="position: absolute; left: 0px; top: 0px;">
+                                    <div style="position: absolute; left: 0px; top: 0px;">
+                                        <div class="highcharts-legend-item" style="position: absolute; left: 8px; top: 3px;">
+                                            <span style="position: absolute; font-family:' &quot;'Lucida Grande'&quot;', '&quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif; font-size: 10px; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; cursor: pointer; margin-left: 0px; margin-top: 0px; left: -20px; top: 1px; fill: rgb(51, 51, 51);"
+                                                zindex="2">سالم</span></div>
+                                        <div class="highcharts-legend-item" style="position: absolute; left: 66px; top: 3px;">
+                                            <span style="position: absolute; font-family: '&quot;'Lucida Grande'&quot;',' &quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif; font-size: 10px; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; cursor: pointer; margin-left: 0px; margin-top: 0px; left: -20px; top: 1px;  fill: rgb(51, 51, 51);"
+                                                zindex="2">كمبيوتر</span></div>
+                                        <div class="highcharts-legend-item" style="position: absolute; left: 137px; top: 3px;">
+                                            <span style="position: absolute; font-family: '&quot;'Lucida Grande'&quot;', '&quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif; font-size: 10px; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; cursor: pointer; margin-left: 0px; margin-top: 0px; left: -20px; top: 1px; fill: rgb(51, 51, 51);"
+                                                zindex="2">test</span></div>
+                                        <div class="highcharts-legend-item" style="position: absolute; left: 200px; top: 3px;">
+                                            <span style="position: absolute; font-family: '&quot;'Lucida Grande'&quot;', '&quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif; font-size: 10px; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; cursor: pointer; margin-left: 0px; margin-top: 0px; left: -20px; top: 1px;  fill: rgb(51, 51, 51);"
+                                                zindex="2">8787</span></div>
+                                        <div class="highcharts-legend-item" style="position: absolute; left: 271px; top: 3px;">
+                                            <span style="position: absolute; font-family: '&quot;'Lucida Grande'&quot;', '&quot;'Lucida Sans Unicode'&quot;', Arial, Helvetica, sans-serif; font-size: 10px; white-space: nowrap; color: rgb(51, 51, 51); font-weight: bold; cursor: pointer; margin-left: 0px; margin-top: 0px; left: -20px; top: 1px;  fill: rgb(51, 51, 51);"
+                                                zindex="2">المنتج</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inner-block-reports clearfix col-md-4 col-md-offset-4 col-sm-12 col-xs-12 mx-auto">
+                        <div class="table-responsive manage-currency-table reports-table pie-table-report">
+                            <table class="table cf" style="text-align: center; width: 700px;">
+                                <thead class="cf">
+                                    <tr>
+                                        <th style="background-color: #14293C;
+                                        color: #ffffff;">اسم المنتج</th>
+                                        <th>2021-11-17</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Customer Name"><a style="color:#7cb5ec; font-weight:600;" href="/tenant/products/1">سالم</a></td>
+                                        <td>1.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Customer Name"><a style="color:#434348; font-weight:600;" href="/tenant/products/2">كمبيوتر</a></td>
+                                        <td>122.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Customer Name"><a style="color:#90ed7d; font-weight:600;" href="/tenant/products/3">test</a></td>
+                                        <td>3.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Customer Name"><a style="color:#f7a35c; font-weight:600;" href="/tenant/products/5">8787</a></td>
+                                        <td>1.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Customer Name"><a style="color:#8085e9; font-weight:600;" href="/tenant/products/6">المنتج</a></td>
+                                        <td>1.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">تصدير</button>
+                            <ul class="dropdown-menu text-right" style="min-width: 100px;" aria-labelledby="dropdownMenuButton1">
+                                <li style="text-align: right;">
+                                    <a class="dropdown-item" href="#"><img src="assets/Exel_icon.png" alt=""> اكسل</a>
+                                </li>
+                                <li style="text-align: right;">
+                                    <a class="dropdown-item" href="#"><img src="assets/pdf_Icon.png" alt=""> PDF</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

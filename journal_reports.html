@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="Qoyod - قيود">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- web page icon-->
+    <link href="assets/logo_57.png" sizes="57x57" rel="icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;400;600;800&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awosome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--/normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style sheet file-->
+    <link rel="stylesheet" href="css/main.css">
+    <title> دفتر القيود</title>
+</head>
+
+<body class="journal-body ">
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html">التقارير</a> <i class="fa fa-angle-double-left client_primary_color"></i></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#"> دفتر القيود</a> </li>
+        </ol>
+    </nav>
+    <div class="container">
+        <section class="content">
+            <div class="form-content">
+                <form class="form" action="#" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+                    <div class="form_row">
+                        <label for="">من</label>
+                        <div class="form_field ">
+                            <div class="input-group mb-3">
+                                <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <span class="datepicker-toggle">
+                                        <span class="datepicker-toggle-button"></span>
+                                    <input type="date" class="datepicker-input">
+                                    <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <label for="">إلى</label>
+                        <div class="form_field ">
+                            <div class="input-group mb-3">
+                                <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <span class="datepicker-toggle">
+                                        <span class="datepicker-toggle-button"></span>
+                                    <input type="date" class="datepicker-input">
+                                    <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="form_row">
+                        <div class="form_field ">
+                            <select name="sort_by" id="sort_by" class="selectpicker"><option value="">ترتيب حسب</option><option value="Journal ID">معرف القيد</option>
+                <option value="Journal Date">تاريخ القيد</option></select>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_field ">
+                            <select name="document" id="document" class="selectpicker">
+                                            <option value="">نوع الملف</option>
+                                            <option value="Bill">فاتورة مشتريات</option>
+                                        <option value="Invoice">فاتورة مبيعات</option>
+                                        <option value="Receipt">السندات</option>
+                                        <option value="Credit Note">إشعار دائن</option>
+                                        <option value="Debit Note">إشعار مدين</option>
+                                        <option value="Manual Journal Entry">قيود يدوية</option>
+                                    </select>
+                        </div>
+                    </div>
+                    <div class="form_row search  ">
+                        <input type="hidden" name="filter" id="filter" value="true">
+                        <button name="button" type="submit" class="btn filter-btn">
+                        <i class="fas fa-filter"></i> بحث</button>
+                        <a class="btn products-reset-btn">
+                            <i class="fa fa-undo"></i>إعادة تعيين
+                        </a>
+                    </div>
+                </form>
+                <br>
+            </div>
+
+
+            <div class="inner-block-reports col-lg-12  col-md-10 col-md-offset-1 col-sm-12 col-xs-12 clearfix">
+                <div class="reports-header text-center">
+                    <h3>دفتر القيود</h3>
+                    <h6>eee</h6>
+                    <h5>من <span>2021-11-01</span> إلى <span>2021-11-30</span></h5>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/1">فاتورة مشتريات BIL1</a></u></th>
+                                <th>رقم القيد 1</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/10?filter_view=false">1106 - المخزون <span> (1106)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/10?filter_view=false">12.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">13.80 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">1.80 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">13.80 ر.س</td>
+                                <td data-title="Credit">13.80 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/1">سند صرف PYT1</a></u></th>
+                                <th>رقم القيد 2</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">23.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">23.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">23.00 ر.س</td>
+                                <td data-title="Credit">23.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/2">فاتورة مشتريات BIL2</a></u></th>
+                                <th>رقم القيد 3</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/3?filter_view=false">120103 - المعدات <span> (120103)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/3?filter_view=false">20.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">23.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">3.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">23.00 ر.س</td>
+                                <td data-title="Credit">23.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/2">سند صرف PYT2</a></u></th>
+                                <th>رقم القيد 4</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/8?filter_view=false">110201 - حساب البنك الجاري - اسم البنك <span> (110201)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/8?filter_view=false">13.80 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">13.80 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">13.80 ر.س</td>
+                                <td data-title="Credit">13.80 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/3">سند قبض PYT3</a></u></th>
+                                <th>رقم القيد 5</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/41?filter_view=false">110102 - العهد النقدية <span> (110102)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/41?filter_view=false">10.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/9?filter_view=false">1103 - المدينون <span> (1103)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/9?filter_view=false">10.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">10.00 ر.س</td>
+                                <td data-title="Credit">10.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/invoices/3">فاتورة مبيعات INV1</a></u></th>
+                                <th>رقم القيد 6</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/9?filter_view=false">1103 - المدينون <span> (1103)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/9?filter_view=false">17.25 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/10?filter_view=false">1106 - المخزون <span> (1106)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/10?filter_view=false">12.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">2.25 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/17?filter_view=false">4101 - إيرادات المبيعات/ الخدمات <span> (4101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/17?filter_view=false">15.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/12?filter_view=false">5101 - تكلفة البضاعة المباعة <span> (5101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/12?filter_view=false">12.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">29.25 ر.س</td>
+                                <td data-title="Credit">29.25 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/easy_entries/1">قيد سهل 7</a></u></th>
+                                <th>رقم القيد 7</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/8?filter_view=false">110201 - حساب البنك الجاري - اسم البنك <span> (110201)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/8?filter_view=false">3,000.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">3,000.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">3,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/58?filter_view=false">5102 - رواتب وأجور <span> (5102)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/58?filter_view=false">3,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">6,000.00 ر.س</td>
+                                <td data-title="Credit">6,000.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/easy_entries/2">قيد سهل 8</a></u></th>
+                                <th>رقم القيد 8</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/41?filter_view=false">110102 - العهد النقدية <span> (110102)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/41?filter_view=false">1,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/87?filter_view=false">110202 - الرياض <span> (110202)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/87?filter_view=false">1,000.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">1,000.00 ر.س</td>
+                                <td data-title="Credit">1,000.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/easy_entries/3">قيد سهل 9</a></u></th>
+                                <th>رقم القيد 9</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">100.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/54?filter_view=false">110401 - تأمين طبي مقدم <span> (110401)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/54?filter_view=false">100.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">100.00 ر.س</td>
+                                <td data-title="Credit">100.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/easy_entries/4">قيد سهل 10</a></u></th>
+                                <th>رقم القيد 10</th>
+                                <th>2021-11-26</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">1,000.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/41?filter_view=false">110102 - العهد النقدية <span> (110102)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/41?filter_view=false">1,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">1,000.00 ر.س</td>
+                                <td data-title="Credit">1,000.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/easy_entries/5">قيد سهل 11</a></u></th>
+                                <th>رقم القيد 11</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/88?filter_view=false">110103 - حسين <span> (110103)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/88?filter_view=false">1,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/87?filter_view=false">110202 - الرياض <span> (110202)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/87?filter_view=false">1,000.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">1,000.00 ر.س</td>
+                                <td data-title="Credit">1,000.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/7">فاتورة مشتريات BIL3</a></u></th>
+                                <th>رقم القيد 12</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/10?filter_view=false">1106 - المخزون <span> (1106)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/10?filter_view=false">5,520.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">6,348.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">828.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">6,348.00 ر.س</td>
+                                <td data-title="Credit">6,348.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/4">سند صرف PYT4</a></u></th>
+                                <th>رقم القيد 13</th>
+                                <th>2021-11-12</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">6,348.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">6,348.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">6,348.00 ر.س</td>
+                                <td data-title="Credit">6,348.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/8">فاتورة مشتريات refORD3</a></u></th>
+                                <th>رقم القيد 14</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/10?filter_view=false">1106 - المخزون <span> (1106)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/10?filter_view=false">5,244.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">6,030.60 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">786.60 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">6,030.60 ر.س</td>
+                                <td data-title="Credit">6,030.60 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/5">سند صرف PYT5</a></u></th>
+                                <th>رقم القيد 15</th>
+                                <th>2021-11-18</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">500.60 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">500.60 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">500.60 ر.س</td>
+                                <td data-title="Credit">500.60 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/6">سند صرف PYT6</a></u></th>
+                                <th>رقم القيد 16</th>
+                                <th>2021-11-16</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">5,530.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">5,530.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">5,530.00 ر.س</td>
+                                <td data-title="Credit">5,530.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/invoices/15">فاتورة مبيعات INV2</a></u></th>
+                                <th>رقم القيد 17</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/9?filter_view=false">1103 - المدينون <span> (1103)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/9?filter_view=false">575.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/10?filter_view=false">1106 - المخزون <span> (1106)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/10?filter_view=false">5,382.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">75.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/17?filter_view=false">4101 - إيرادات المبيعات/ الخدمات <span> (4101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/17?filter_view=false">500.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/74?filter_view=false">5214 - مصاريف أخرى <span> (5214)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/74?filter_view=false">5,382.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">5,957.00 ر.س</td>
+                                <td data-title="Credit">5,957.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/7">سند قبض PYT7</a></u></th>
+                                <th>رقم القيد 18</th>
+                                <th>2021-11-23</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">575.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/9?filter_view=false">1103 - المدينون <span> (1103)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/9?filter_view=false">575.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">575.00 ر.س</td>
+                                <td data-title="Credit">575.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/16">فاتورة مشتريات BIL4</a></u></th>
+                                <th>رقم القيد 19</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/3?filter_view=false">120103 - المعدات <span> (120103)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/3?filter_view=false">4,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">4,600.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">600.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">4,600.00 ر.س</td>
+                                <td data-title="Credit">4,600.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/8">سند صرف PYT8</a></u></th>
+                                <th>رقم القيد 20</th>
+                                <th>2021-11-21</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">4,600.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">4,600.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">4,600.00 ر.س</td>
+                                <td data-title="Credit">4,600.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/18">فاتورة مشتريات BIL5</a></u></th>
+                                <th>رقم القيد 21</th>
+                                <th>2021-11-10</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/3?filter_view=false">120103 - المعدات <span> (120103)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/3?filter_view=false">1,200.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">1,380.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">180.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">1,380.00 ر.س</td>
+                                <td data-title="Credit">1,380.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/9">سند صرف PYT9</a></u></th>
+                                <th>رقم القيد 22</th>
+                                <th>2021-11-25</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/88?filter_view=false">110103 - حسين <span> (110103)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/88?filter_view=false">1,380.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">1,380.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">1,380.00 ر.س</td>
+                                <td data-title="Credit">1,380.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/20">فاتورة مشتريات BIL6</a></u></th>
+                                <th>رقم القيد 23</th>
+                                <th>2021-11-10</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">11,500.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">1,500.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/12?filter_view=false">5101 - تكلفة البضاعة المباعة <span> (5101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/12?filter_view=false">10,000.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">11,500.00 ر.س</td>
+                                <td data-title="Credit">11,500.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/10">سند صرف PYT10</a></u></th>
+                                <th>رقم القيد 24</th>
+                                <th>2021-11-24</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">11,500.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">11,500.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">11,500.00 ر.س</td>
+                                <td data-title="Credit">11,500.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/bills/14">فاتورة مشتريات refORD4</a></u></th>
+                                <th>رقم القيد 25</th>
+                                <th>2021-11-05</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/10?filter_view=false">1106 - المخزون <span> (1106)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/10?filter_view=false">5,520.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">6,348.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/19?filter_view=false">2105 - ضريبة القيمة المضافة المستحقة <span> (2105)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/19?filter_view=false">828.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">6,348.00 ر.س</td>
+                                <td data-title="Credit">6,348.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/receipts/11">سند صرف PYT11</a></u></th>
+                                <th>رقم القيد 26</th>
+                                <th>2021-11-18</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">6,348.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/14?filter_view=false">2101 - الدائنون <span> (2101)</span></a></td>
+                                <td><a href="/tenant/reports/general_ledgers/14?filter_view=false">6,348.00 ر.س</a></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">6,348.00 ر.س</td>
+                                <td data-title="Credit">6,348.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive manage-currency-table reports-table">
+                    <table class="table cf">
+                        <thead class="cf">
+                            <tr>
+                                <th colspan="2"><u><a href="/tenant/manual_journal_entries/1">قيد يدوي 27</a></u></th>
+                                <th>رقم القيد 27</th>
+                                <th>2021-11-11</th>
+                            </tr>
+                            <tr>
+                                <th>الحساب</th>
+                                <th>مدين</th>
+                                <th>دائن</th>
+                                <th>التعليقات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">0.00 ر.س</a></td>
+                                <td>Opening Balance - رصيد افتتاحي | Cash on hand</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="arabic_tblcash_dir"><a class="" href="/tenant/reports/general_ledgers/7?filter_view=false">110101 - النقدية في الخزينة <span> (110101)</span></a></div>
+                                </td>
+                                <td><a href="/tenant/reports/general_ledgers/7?filter_view=false">3,566.00 ر.س</a></td>
+                                <td></td>
+                                <td>Opening Balance - رصيد افتتاحي | Cash on hand</td>
+                            </tr>
+                            <tr>
+                                <td><a class="" href="/tenant/reports/general_ledgers/15?filter_view=false">3101 - رأس المال المسجل <span> (3101)</span></a></td>
+                                <td></td>
+                                <td><a href="/tenant/reports/general_ledgers/15?filter_view=false">3,566.00 ر.س</a></td>
+                                <td></td>
+                            </tr>
+                            <tr class="reports-total">
+                                <td data-title="Account">أنشئ بواسطة نوره ال سالم</td>
+                                <td data-title="Debit">3,566.00 ر.س</td>
+                                <td data-title="Credit">3,566.00 ر.س</td>
+                                <td data-title="comment"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">تصدير</button>
+                    <ul class="dropdown-menu text-right" style="min-width: 100px;" aria-labelledby="dropdownMenuButton1">
+                        <li style="text-align: right;">
+                            <a class="dropdown-item" href="#"><img src="assets/Exel_icon.png" alt=""> اكسل</a>
+                        </li>
+                        <li style="text-align: right;">
+                            <a class="dropdown-item" href="#"><img src="assets/pdf_Icon.png" alt=""> PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </section>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

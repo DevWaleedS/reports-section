@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="Qoyod - قيود">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- web page icon-->
+    <link href="assets/logo_57.png" sizes="57x57" rel="icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;400;600;800&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awosome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--/normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style sheet file-->
+    <link rel="stylesheet" href="css/main.css">
+    <title> ملخص الحساب</title>
+</head>
+
+<body class="ac-sum-body">
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html">التقارير</a> <i class="fa fa-angle-double-left client_primary_color"></i></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#"> ملخص الحساب</a> </li>
+        </ol>
+        <div class="back-btn pull-right">
+            <a href="#" onclick="go_back()">
+                رجوع <i class="fa fa-arrow-left client_primary_color fw-700"></i>
+            </a>
+        </div>
+        <div class="reports-error-field" style="position: relative;
+        left: -10px;
+        width: 90.3%;
+        padding: 10px;
+        border-radius: 4px;
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        margin-bottom: 10px;
+    ">
+            <img src="assets/Faliure_icon.png" style="    width: 2%;"> يجب تحديد حساب
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <section class="content" id="account-summary">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <form class="form-wraper" action="/tenant/reports/general_ledgers/no_id/account_summary" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                    <div class="form-content">
+                        <div class="form_row">
+                            <div class="form_field account_field">
+                                <select name="account_name" id="account_name" class="selectpicker" data-live-search="true"><option value="">اسم الحساب</option><optgroup label="الاصول"><option value="4">1 - الأصول</option>
+                <option value="5">11 - أصول متداولة</option>
+                <option value="29">1101 - النقد ومايعادله</option>
+                <option value="7">110101 - النقدية في الخزينة</option>
+                <option value="41">110102 - العهد النقدية</option>
+                <option value="88">110103 - حسين</option>
+                <option value="89">110104 - اتنانتا</option>
+                <option value="52">1102 - النقدية في البنك</option>
+                <option value="8">110201 - حساب البنك الجاري - اسم البنك</option>
+                <option value="87">110202 - الرياض</option>
+                <option value="9">1103 - المدينون</option>
+                <option value="21">1104 - مصروفات مقدمة</option>
+                <option value="54">110401 - تأمين طبي مقدم</option>
+                <option value="57">110402 - إيجار مقدم</option>
+                <option value="61">1105 - مدفوعات مقدمة للموظفين</option>
+                <option value="10">1106 - المخزون</option>
+                <option value="90">1107 - بابلا</option>
+                <option value="92">1109 - مصطفى</option>
+                <option value="93">1110 - مصطفي</option>
+                <option value="20">12 - أصول غير متداولة</option>
+                <option value="64">1201 - عقارات وآلات ومعدات</option>
+                <option value="1">120101 - الأراضي</option>
+                <option value="2">120102 - المباني</option>
+                <option value="3">120103 - المعدات</option>
+                <option value="6">120104 - أجهزة مكتبية وطابعات</option>
+                <option value="22">1202 - الأصول غير الملموسة</option>
+                <option value="23">1203 - العقارات الاستثمارية</option>
+                <option value="94">13 - اسماء</option></optgroup><optgroup label="الالتزامات"><option value="24">2 - الالتزامات</option>
+                <option value="25">21 - الالتزامات المتداولة</option>
+                <option value="14">2101 - الدائنون</option>
+                <option value="26">2102 - مصروفات مستحقة</option>
+                <option value="27">2103 - الرواتب المستحقة</option>
+                <option value="28">2104 - قروض قصيرة الأجل</option>
+                <option value="19">2105 - ضريبة القيمة المضافة المستحقة</option>
+                <option value="30">2106 - الضرائب المستحقة</option>
+                <option value="31">2107 - إيرادات غير مكتسبة</option>
+                <option value="32">2108 - مستحقات المؤسسة العامة للتأمينات الاجتماعية</option>
+                <option value="33">2109 - مجمع الاستهلاك</option>
+                <option value="34">210901 - مجمع استهلاك المباني</option>
+                <option value="35">210902 - مجمع استهلاك المعدات</option>
+                <option value="36">210903 - مجمع استهلاك أجهزة مكتبية وطابعات</option>
+                <option value="85">2110 - مخصص مكافأة نهاية الخدمة</option>
+                <option value="37">22 - التزامات غير متداولة</option>
+                <option value="38">2201 - قروض طويلة أجل</option></optgroup><optgroup label="المصاريف"><option value="55">5 - المصاريف</option>
+                <option value="56">51 - التكاليف المباشرة</option>
+                <option value="12">5101 - تكلفة البضاعة المباعة</option>
+                <option value="58">5102 - رواتب وأجور</option>
+                <option value="59">5103 - عمولات البيع</option>
+                <option value="84">5104 - شحن وتخليص جمركي</option>
+                <option value="60">52 - التكاليف التشغيلية</option>
+                <option value="13">5201 - الرواتب والرسوم الإدارية</option>
+                <option value="62">5202 - تأمين طبي</option>
+                <option value="63">5203 - مصاريف تسويقية ودعائية</option>
+                <option value="11">5204 - مصاريف الإيجار</option>
+                <option value="65">5205 - عمولات وحوافز</option>
+                <option value="66">5206 - تذاكر سفر</option>
+                <option value="67">5207 - التأمينات الاجتماعية</option>
+                <option value="68">5208 - الرسوم الحكومية</option>
+                <option value="69">5209 - رسوم واشتراكات</option>
+                <option value="70">5210 - مصاريف خدمات المكتب</option>
+                <option value="71">5211 - مصاريف مكتبية ومطبوعات</option>
+                <option value="72">5212 - مصاريف ضيافة</option>
+                <option value="73">5213 - عمولات بنكية</option>
+                <option value="74">5214 - مصاريف أخرى</option>
+                <option value="75">5215 - مصاريف الإهلاك</option>
+                <option value="76">521501 - مصروف إهلاك المباني</option>
+                <option value="77">521502 - مصروف إهلاك المعدات</option>
+                <option value="78">521503 - مصروف إهلاك أجهزة مكتبية وطابعات</option>
+                <option value="82">5219 - مصروف نقل ومواصلات</option>
+                <option value="83">53 - مصاريف غير التشغيلية</option>
+                <option value="79">5301 - الزكاة</option>
+                <option value="80">5302 - الضرائب</option>
+                <option value="81">5303 - ترجمة عملات أجنبية</option>
+                <option value="86">5304 - فوائد</option></optgroup><optgroup label="حقوق الملاك"><option value="39">3 - حقوق الملكية</option>
+                <option value="40">31 - رأس المال</option>
+                <option value="15">3101 - رأس المال المسجل</option>
+                <option value="42">3102 - رأس المال الإضافي المدفوع</option>
+                <option value="43">32 - حقوق ملكية أخرى</option>
+                <option value="44">3201 - أرصدة افتتاحية</option>
+                <option value="48">33 - احتياطيات</option>
+                <option value="45">3301 - احتياطي نظامي</option>
+                <option value="46">3302 - احتياطي ترجمة عملات أجنبية</option>
+                <option value="47">34 - الأرباح المبقاة (أو الخسائر)</option>
+                <option value="49">3401 - الأرباح والخسائر العاملة</option>
+                <option value="16">3402 - الأرباح المبقاة (أو الخسائر)</option></optgroup><optgroup label="الايرادات"><option value="50">4 - الإيرادات</option>
+                <option value="51">41 - الإيرادات التشغيلية</option>
+                <option value="17">4101 - إيرادات المبيعات/ الخدمات</option>
+                <option value="53">42 - الإيرادات غير التشغيلية</option>
+                <option value="18">4201 - إيرادات أخرى</option></optgroup></select>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div style="margin-left: -23px;" class="form_label" style="display:inline-block;">من :</div>
+                            <div class="form_field  ">
+                                <div class="dropdown bootstrap-select bs3">
+                                    <select name="from" id="from" class="selectpicker" data-live-search="true" tabindex="null"><option selected="selected" value="January 2021">January 2021</option>
+                                        <option value="February 2021">February 2021</option>
+                                        <option value="March 2021">March 2021</option>
+                                        <option value="April 2021">April 2021</option>
+                                        <option value="May 2021">May 2021</option>
+                                        <option value="June 2021">June 2021</option>
+                                        <option value="July 2021">July 2021</option>
+                                        <option value="August 2021">August 2021</option>
+                                        <option value="September 2021">September 2021</option>
+                                        <option value="October 2021">October 2021</option>
+                                        <option value="November 2021">November 2021</option>
+                                        <option value="December 2021">December 2021</option>
+                                    </select>
+
+                                    <div class="dropdown-menu open" style="max-height: 247.594px; overflow: hidden; min-height: 131px;">
+                                        <div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list" aria-activedescendant="bs-select-2-2"></div>
+                                        <div class="inner open" role="listbox" id="bs-select-2" tabindex="-1" style="max-height: 196.594px; overflow-y: auto; min-height: 80px;">
+                                            <ul class="dropdown-menu inner " role="presentation" style="margin-top: 0px; margin-bottom: 0px;">
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-0" tabindex="0" aria-setsize="12" aria-posinset="1"><span class="text">January 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-1" tabindex="0" aria-setsize="12" aria-posinset="2"><span class="text">February 2021</span></a></li>
+                                                <li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-2-2" tabindex="0" aria-setsize="12" aria-posinset="3" aria-selected="true"><span class="text">March 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-3" tabindex="0" aria-setsize="12" aria-posinset="4"><span class="text">April 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-4" tabindex="0" aria-setsize="12" aria-posinset="5"><span class="text">May 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-5" tabindex="0" aria-setsize="12" aria-posinset="6"><span class="text">June 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-6" tabindex="0"><span class="text">July 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-7" tabindex="0"><span class="text">August 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-8" tabindex="0"><span class="text">September 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-9" tabindex="0"><span class="text">October 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-10" tabindex="0"><span class="text">November 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-2-11" tabindex="0"><span class="text">December 2021</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div style="margin-left: -23px; " class="form_label" style="display:inline-block;"> إلى :</div>
+                            <div class="form_field  ">
+                                <div class="dropdown bootstrap-select bs3">
+                                    <select name="to" id="to" class="selectpicker" data-live-search="true" tabindex="null"><option value="January 2021">January 2021</option>
+                                        <option value="February 2021">February 2021</option>
+                                        <option value="March 2021">March 2021</option>
+                                        <option value="April 2021">April 2021</option>
+                                        <option value="May 2021">May 2021</option>
+                                        <option value="June 2021">June 2021</option>
+                                        <option value="July 2021">July 2021</option>
+                                        <option value="August 2021">August 2021</option>
+                                        <option value="September 2021">September 2021</option>
+                                        <option value="October 2021">October 2021</option>
+                                        <option selected="selected" value="November 2021">November 2021</option>
+                                        <option value="December 2021">December 2021</option>
+                                    </select>
+                                    <div class="dropdown-menu open" style="max-height: 247.594px; overflow: hidden; min-height: 131px;">
+                                        <div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-3" aria-autocomplete="list" aria-activedescendant="bs-select-3-1"></div>
+                                        <div class="inner open" role="listbox" id="bs-select-3" tabindex="-1" style="max-height: 196.594px; overflow-y: auto; min-height: 80px;">
+                                            <ul class="dropdown-menu inner " role="presentation" style="margin-top: 0px; margin-bottom: 0px;">
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-0" tabindex="0" aria-setsize="12" aria-posinset="1"><span class="text">January 2021</span></a></li>
+                                                <li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-3-1" tabindex="0" aria-setsize="12" aria-posinset="2" aria-selected="true"><span class="text">February 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-2" tabindex="0" aria-setsize="12" aria-posinset="3"><span class="text">March 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-3" tabindex="0"><span class="text">April 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-4" tabindex="0"><span class="text">May 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-5" tabindex="0"><span class="text">June 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-6" tabindex="0"><span class="text">July 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-7" tabindex="0"><span class="text">August 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-8" tabindex="0"><span class="text">September 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-9" tabindex="0"><span class="text">October 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-10" tabindex="0"><span class="text">November 2021</span></a></li>
+                                                <li><a role="option" class="dropdown-item" id="bs-select-3-11" tabindex="0"><span class="text">December 2021</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button name="button" type="submit" class="btn filter-btn">
+                            <i class="fa fa-filter"></i>بحث
+                        </button>
+                        <a style="margin-right: -15px;" class="btn products-reset-btn" href="/tenant/reports/general_ledgers/reset_session?form=ledger_summary">
+                            <i class="fa fa-undo"></i>إعادة تعيين
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="content" id="account-summary-pdf">
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="add_subscription_form add-products-form clearfix">
+                        <div id="bla">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+    </div>
+
+
+</body>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

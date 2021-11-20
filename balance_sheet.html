@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="Qoyod - قيود">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- web page icon-->
+    <link href="assets/logo_57.png" sizes="57x57" rel="icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;400;600;800&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awosome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--/normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style sheet file-->
+    <link rel="stylesheet" href="css/main.css">
+    <title> الميزانية العمومية</title>
+</head>
+
+<body class="balance-body">
+
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html">   التقارير</a> <i class="fa fa-angle-double-left client_primary_color"></i></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">  الميزانية العمومية   </a> </li>
+        </ol>
+    </nav>
+    <div class="container">
+        <section class="content">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="add_subscription_form add-products-form clearfix">
+                    <div class="add_subscription report_subscription">
+                        <section class="form-content">
+                            <form class="form" action="#" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+                                <div class="form_row">
+                                    <div class="form_field ">
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                            <div class="input-group-prepend">
+                                                <span class="datepicker-toggle">
+                                                    <span class="datepicker-toggle-button"></span>
+                                                <input type="date" class="datepicker-input">
+                                                <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="form_row">
+                                    <div class="form_field">
+                                        <select name="query[dimension][type]" id="period_dimension_type" class="selectpicker q_dimension_type">
+                                        <option value="">مقارنة بفترة سابقة</option>
+                                        <option value="previous_year">السنة الماضية</option>
+                                        <option value="previous_month">الشهر الماضي</option>
+                                        <option value="previous_quarter">الربع السابق</option>
+                                        <option value="previous_week">الأسبوع السابق</option>
+                                        <option value="previous_day">اليوم السابق</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_row">
+                                    <div class="form_field ">
+                                        <select name="query[dimension][query][]" id="period_dimension_query" class="selectpicker">
+                                        <option value="">عدد الفترات الزمنية</option>
+                                        <option selected="selected" value="Period 1">فترة</option>
+                                        <option value="Period 2">فترتان</option>
+                                        <option value="Period 3">3 فترات</option>
+                                        <option value="Period 4">4 فترات</option>
+                                        <option value="Period 5">5 فترات</option>
+                                        <option value="Period 6">6 فترات</option>
+                                        <option value="Period 7">7 فترات</option>
+                                        <option value="Period 8">8 فترات</option>
+                                        <option value="Period 9">9 فترات</option>
+                                        <option value="Period 10">10 فترات</option>
+                                        <option value="Period 11">11 فترة</option>
+                                        <option value="Period 12">12 فترة</option>
+                                        <option value="Period 13">13 فترة</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="form_row ">
+                                    <div class="form_field ">
+                                        <div class="dropdown bootstrap-select bs3">
+                                            <select name="query[depth]" id="query_depth" class="selectpicker">
+                                <option value="">المستويات</option>
+                                <option value="1">عرض نوع الحساب فقط</option>
+                                <option value="2">المستوى 2</option>
+                                <option value="3">المستوى 3</option>
+                                <option value="4">المستوى 4</option>
+                                <option value="5">المستوى 5</option>
+                                <option value="6">المستوى 6</option>
+                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form_row search  ">
+                                    <input type="hidden" name="filter" id="filter" value="true">
+                                    <button name="button" type="submit" class="btn filter-btn">
+                                        <i class="fas fa-filter"></i> بحث</button>
+                                    <a class="btn products-reset-btn">
+                                        <i class="fa fa-undo"></i>إعادة تعيين
+                                    </a>
+                                </div>
+                                <div class="pull-right">
+                                    <!-- begin toggle markup	 -->
+                                    <label class="toggle" for="uniqueID">
+                                        <b>تحليل متقدم</b>
+                                        <input type="checkbox" class="toggle__input" id="uniqueID" />
+                                        <span class="toggle-track">
+                                             <span class="toggle-indicator">
+                                                <!-- 	This check mark is optional	 -->
+                                             </span>
+                                        </span>
+                                        </label>
+                                    <!-- end toggle markup	 -->
+                                    <!-- begin toggle markup	 -->
+                                    <label class="toggle" for="uniqueID">
+                                        <b class="search"> ‎فحص</b>  <i class="fa fa-search"></i>
+                                                <input type="checkbox" class="toggle__input" id="uniqueID" />
+                                                <span class="toggle-track">
+                                                    <span class="toggle-indicator">
+                                                        <!-- 	This check mark is optional	 -->
+                                                    </span>
+                                                </span>
+                                            </label>
+                                    <!-- end toggle markup	 -->
+
+
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="inner-block-reports col-md-12 col-sm-12 col-xs-12 clearfix">
+                        <div class="reports-header text-center">
+                            <h3>الميزانية العمومية</h3>
+                            <h6>eee</h6>
+                            <h6></h6>
+                            <h5>
+                                <span>
+            
+            <span class="titleize">
+            من 2021-11-05 إلى 2021-11-30
+            </span>
+                                </span>
+                            </h5>
+                        </div>
+                        <div class="table-responsive reports-table tree-table tree">
+                            <table class="table cf ">
+                                <thead class="cf">
+                                    <tr>
+                                        <th colspan="3">&nbsp;</th>
+                                        <th>
+                                            2021-11-30
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" class="report-table-head">1 - الأصول</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-2">
+                                            <a href="/tenant/reports/general_ledgers/5/account_summary?account_name=5&amp;from=2021-11-05&amp;to=2021-11-30">
+            11 - أصول متداولة
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/29/account_summary?account_name=29&amp;from=2021-11-05&amp;to=2021-11-30">
+            1101 - النقد ومايعادله
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/7/account_summary?account_name=7&amp;from=2021-11-05&amp;to=2021-11-30">
+            110101 - النقدية في الخزينة
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="7" data-query="{&quot;account_id&quot;:7,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&qquot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (31,808.60 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/41/account_summary?account_name=41&amp;from=2021-11-05&amp;to=2021-11-30">
+            110102 - العهد النقدية
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="41" data-query="{&quot;account_id&quot;:41,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            2,010.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/88/account_summary?account_name=88&amp;from=2021-11-05&amp;to=2021-11-30">
+            110103 - حسين
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="88" data-query="{&quot;account_id&quot;:88,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (380.00 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-3">
+                                            مجموع 1101 - النقد ومايعادله
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="29" data-query="{&quot;account_id&quot;:29,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (30,178.60 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/52/account_summary?account_name=52&amp;from=2021-11-05&amp;to=2021-11-30">
+            1102 - النقدية في البنك
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/8/account_summary?account_name=8&amp;from=2021-11-05&amp;to=2021-11-30">
+            110201 - حساب البنك الجاري - اسم البنك
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="8" data-query="{&quot;account_id&quot;:8,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (3,013.80 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/87/account_summary?account_name=87&amp;from=2021-11-05&amp;to=2021-11-30">
+            110202 - الرياض
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="87" data-query="{&quot;account_id&quot;:87,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (2,000.00 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-3">
+                                            مجموع 1102 - النقدية في البنك
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="52" data-query="{&quot;account_id&quot;:52,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (5,013.80 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/9/account_summary?account_name=9&amp;from=2021-11-05&amp;to=2021-11-30">
+            1103 - المدينون
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="9" data-query="{&quot;account_id&quot;:9,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            7.25 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/21/account_summary?account_name=21&amp;from=2021-11-05&amp;to=2021-11-30">
+            1104 - مصروفات مقدمة
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/54/account_summary?account_name=54&amp;from=2021-11-05&amp;to=2021-11-30">
+            110401 - تأمين طبي مقدم
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="54" data-query="{&quot;account_id&quot;:54,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            100.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-3">
+                                            مجموع 1104 - مصروفات مقدمة
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="21" data-query="{&quot;account_id&quot;:21,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            100.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/10/account_summary?account_name=10&amp;from=2021-11-05&amp;to=2021-11-30">
+            1106 - المخزون
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="10" data-query="{&quot;account_id&quot;:10,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            10,902.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-2">
+                                            مجموع 11 - أصول متداولة
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="5" data-query="{&quot;account_id&quot;:5,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (24,183.15 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-2">
+                                            <a href="/tenant/reports/general_ledgers/20/account_summary?account_name=20&amp;from=2021-11-05&amp;to=2021-11-30">
+            12 - أصول غير متداولة
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/64/account_summary?account_name=64&amp;from=2021-11-05&amp;to=2021-11-30">
+            1201 - عقارات وآلات ومعدات
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-4">
+                                            <a href="/tenant/reports/general_ledgers/3/account_summary?account_name=3&amp;from=2021-11-05&amp;to=2021-11-30">
+            120103 - المعدات
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="3" data-query="{&quot;account_id&quot;:3,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            5,220.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-3">
+                                            مجموع 1201 - عقارات وآلات ومعدات
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="64" data-query="{&quot;account_id&quot;:64,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            5,220.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-2">
+                                            مجموع 12 - أصول غير متداولة
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="20" data-query="{&quot;account_id&quot;:20,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            5,220.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr class="main-account-total">
+                                        <td colspan="3">
+                                            مجموع 1 - الأصول
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="4" data-query="{&quot;account_id&quot;:4,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (18,963.15 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="report-table-head">2 - الالتزامات</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-2">
+                                            <a href="/tenant/reports/general_ledgers/25/account_summary?account_name=25&amp;from=2021-11-05&amp;to=2021-11-30">
+            21 - الالتزامات المتداولة
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/19/account_summary?account_name=19&amp;from=2021-11-05&amp;to=2021-11-30">
+            2105 - ضريبة القيمة المضافة المستحقة
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="19" data-query="{&quot;account_id&quot;:19,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (4,650.15 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-2">
+                                            مجموع 21 - الالتزامات المتداولة
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="25" data-query="{&quot;account_id&quot;:25,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (4,650.15 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr class="main-account-total">
+                                        <td colspan="3">
+                                            مجموع 2 - الالتزامات
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="24" data-query="{&quot;account_id&quot;:24,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (4,650.15 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="report-table-head">3 - حقوق الملكية</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-2">
+                                            <a href="/tenant/reports/general_ledgers/40/account_summary?account_name=40&amp;from=2021-11-05&amp;to=2021-11-30">
+            31 - رأس المال
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/15/account_summary?account_name=15&amp;from=2021-11-05&amp;to=2021-11-30">
+            3101 - رأس المال المسجل
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="15" data-query="{&quot;account_id&quot;:15,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            3,566.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-2">
+                                            مجموع 31 - رأس المال
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="40" data-query="{&quot;account_id&quot;:40,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            3,566.00 ر.س
+            </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-2">
+                                            <a href="/tenant/reports/general_ledgers/47/account_summary?account_name=47&amp;from=2021-11-05&amp;to=2021-11-30">
+            34 - الأرباح المبقاة (أو الخسائر)
+            </a>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="padleftindex-3">
+                                            <a href="/tenant/reports/general_ledgers/16/account_summary?account_name=16&amp;from=2021-11-05&amp;to=2021-11-30">
+            3402 - الأرباح المبقاة (أو الخسائر)
+            </a>
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="16" data-query="{&quot;account_id&quot;:16,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (17,879.00 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr class="dark-row">
+                                        <td colspan="3" class="padleftindex-2">
+                                            مجموع 34 - الأرباح المبقاة (أو الخسائر)
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="47" data-query="{&quot;account_id&quot;:47,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (17,879.00 ر.س)
+            </span> </td>
+                                    </tr>
+                                    <tr class="main-account-total">
+                                        <td colspan="3">
+                                            مجموع 3 - حقوق الملكية
+                                        </td>
+                                        <td>
+                                            <span class="amount-popup underline" data-account-id="39" data-query="{&quot;account_id&quot;:39,&quot;to&quot;:&quot;2021-11-30&quot;,&quot;from&quot;:&quot;2021-11-05&quot;,&quot;amount_type&quot;:null,&quot;filter&quot;:{&quot;type&quot;:null,&quot;kind&quot;:null},&quot;dimension&quot;:{&quot;type&quot;:null,&quot;query&quot;:[&quot;2021-11-30&quot;],&quot;kind&quot;:null}}">
+            (14,313.00 ر.س)
+            </span> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">تصدير</button>
+                            <ul class="dropdown-menu text-right" style="min-width: 100px;" aria-labelledby="dropdownMenuButton1">
+                                <li style="text-align: right;">
+                                    <a class="dropdown-item" href="#"><img src="assets/Exel_icon.png" alt=""> اكسل</a>
+                                </li>
+                                <li style="text-align: right;">
+                                    <a class="dropdown-item" href="#"><img src="assets/pdf_Icon.png" alt=""> PDF</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

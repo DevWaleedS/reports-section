@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="Qoyod - قيود">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- web page icon-->
+    <link href="assets/logo_57.png" sizes="57x57" rel="icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;400;600;800&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awosome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--/normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style sheet file-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>كشف الحساب </title>
+</head>
+
+<body class="genral-body">
+
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html">التقارير</a> <i class="fa fa-angle-double-left client_primary_color"></i></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#"> كشف الحساب</a> </li>
+        </ol>
+        <div class="reports-error-field" style="position: relative;
+       left: -10px;
+       width: 90.3%;
+        padding: 10px;
+        border-radius: 4px;
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        margin-bottom: 10px;
+    ">
+            <img src="assets/Faliure_icon.png" style="    width: 2%;"> يجب تحديد حساب
+        </div>
+    </nav>
+    <div class="container">
+        <section class="content">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <form class="form-wraper" action="/tenant/reports/general_ledgers/no_id/account_summary" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+                    <section class="form-content">
+                        <div class="group-one">
+                            <div class="form_row">
+                                <div class="dropdown ">
+                                    <select name="query[account_id]" id="AccountName" class="selectpicker" data-live-search="true" tabindex="null">
+                                        <option value="">اسم الحساب</option>
+                                        <optgroup label="الاصول">
+                                            <option value="4">1 - الأصول</option>
+                                            <option value="5">11 - أصول متداولة</option>
+                                            <option value="29">1101 - النقد ومايعادله</option>
+                                            <option value="7">110101 - النقدية في الخزينة</option>
+                                            <option value="41">110102 - العهد النقدية</option>
+                                            <option value="88">110103 - حسين</option>
+                                            <option value="89">110104 - اتنانتا</option>
+                                            <option value="52">1102 - النقدية في البنك</option>
+                                            <option value="8">110201 - حساب البنك الجاري - اسم البنك</option>
+                                            <option value="87">110202 - الرياض</option>
+                                            <option value="9">1103 - المدينون</option>
+                                            <option value="21">1104 - مصروفات مقدمة</option>
+                                            <option value="54">110401 - تأمين طبي مقدم</option>
+                                            <option value="57">110402 - إيجار مقدم</option>
+                                            <option value="61">1105 - مدفوعات مقدمة للموظفين</option>
+                                            <option value="10">1106 - المخزون</option>
+                                            <option value="90">1107 - بابلا</option>
+                                            <option value="92">1109 - مصطفى</option>
+                                            <option value="93">1110 - مصطفي</option>
+                                            <option value="20">12 - أصول غير متداولة</option>
+                                            <option value="64">1201 - عقارات وآلات ومعدات</option>
+                                            <option value="1">120101 - الأراضي</option>
+                                            <option value="2">120102 - المباني</option>
+                                            <option value="3">120103 - المعدات</option>
+                                            <option value="6">120104 - أجهزة مكتبية وطابعات</option>
+                                            <option value="22">1202 - الأصول غير الملموسة</option>
+                                            <option value="23">1203 - العقارات الاستثمارية</option>
+                                            <option value="94">13 - اسماء</option>
+                                        </optgroup>
+                                        <optgroup label="الالتزامات">
+                                            <option value="24">2 - الالتزامات</option>
+                                            <option value="25">21 - الالتزامات المتداولة</option>
+                                            <option value="14">2101 - الدائنون</option>
+                                            <option value="26">2102 - مصروفات مستحقة</option>
+                                            <option value="27">2103 - الرواتب المستحقة</option>
+                                            <option value="28">2104 - قروض قصيرة الأجل</option>
+                                            <option value="19">2105 - ضريبة القيمة المضافة المستحقة</option>
+                                            <option value="30">2106 - الضرائب المستحقة</option>
+                                            <option value="31">2107 - إيرادات غير مكتسبة</option>
+                                            <option value="32">2108 - مستحقات المؤسسة العامة للتأمينات الاجتماعية</option>
+                                            <option value="33">2109 - مجمع الاستهلاك</option>
+                                            <option value="34">210901 - مجمع استهلاك المباني</option>
+                                            <option value="35">210902 - مجمع استهلاك المعدات</option>
+                                            <option value="36">210903 - مجمع استهلاك أجهزة مكتبية وطابعات</option>
+                                            <option value="85">2110 - مخصص مكافأة نهاية الخدمة</option>
+                                            <option value="37">22 - التزامات غير متداولة</option>
+                                            <option value="38">2201 - قروض طويلة أجل</option>
+                                    </optgroup>
+                                    <optgroup label="المصاريف">
+                                        <option value="55">5 - المصاريف</option>
+                                        <option value="56">51 - التكاليف المباشرة</option>
+                                        <option value="12">5101 - تكلفة البضاعة المباعة</option>
+                                        <option value="58">5102 - رواتب وأجور</option>
+                                        <option value="59">5103 - عمولات البيع</option>
+                                        <option value="84">5104 - شحن وتخليص جمركي</option>
+                                        <option value="60">52 - التكاليف التشغيلية</option>
+                                        <option value="13">5201 - الرواتب والرسوم الإدارية</option>
+                                        <option value="62">5202 - تأمين طبي</option>
+                                        <option value="63">5203 - مصاريف تسويقية ودعائية</option>
+                                        <option value="11">5204 - مصاريف الإيجار</option>
+                                        <option value="65">5205 - عمولات وحوافز</option>
+                                        <option value="66">5206 - تذاكر سفر</option>
+                                        <option value="67">5207 - التأمينات الاجتماعية</option>
+                                        <option value="68">5208 - الرسوم الحكومية</option>
+                                        <option value="69">5209 - رسوم واشتراكات</option>
+                                        <option value="70">5210 - مصاريف خدمات المكتب</option>
+                                        <option value="71">5211 - مصاريف مكتبية ومطبوعات</option>
+                                        <option value="72">5212 - مصاريف ضيافة</option>
+                                        <option value="73">5213 - عمولات بنكية</option>
+                                        <option value="74">5214 - مصاريف أخرى</option>
+                                        <option value="75">5215 - مصاريف الإهلاك</option>
+                                        <option value="76">521501 - مصروف إهلاك المباني</option>
+                                        <option value="77">521502 - مصروف إهلاك المعدات</option>
+                                        <option value="78">521503 - مصروف إهلاك أجهزة مكتبية وطابعات</option>
+                                        <option value="82">5219 - مصروف نقل ومواصلات</option>
+                                        <option value="83">53 - مصاريف غير التشغيلية</option>
+                                        <option value="79">5301 - الزكاة</option>
+                                        <option value="80">5302 - الضرائب</option>
+                                        <option value="81">5303 - ترجمة عملات أجنبية</option>
+                                        <option value="86">5304 - فوائد</option>
+                                    </optgroup>
+                                    <optgroup label="حقوق الملاك">
+                                        <option value="39">3 - حقوق الملكية</option>
+                                        <option value="40">31 - رأس المال</option>
+                                        <option value="15">3101 - رأس المال المسجل</option>
+                                        <option value="42">3102 - رأس المال الإضافي المدفوع</option>
+                                        <option value="43">32 - حقوق ملكية أخرى</option>
+                                        <option value="44">3201 - أرصدة افتتاحية</option>
+                                        <option value="48">33 - احتياطيات</option>
+                                        <option value="45">3301 - احتياطي نظامي</option>
+                                        <option value="46">3302 - احتياطي ترجمة عملات أجنبية</option>
+                                        <option value="47">34 - الأرباح المبقاة (أو الخسائر)</option>
+                                        <option value="49">3401 - الأرباح والخسائر العاملة</option>
+                                        <option value="16">3402 - الأرباح المبقاة (أو الخسائر)</option>
+                                    </optgroup>
+                                    <optgroup label="الايرادات"><option value="50">4 - الإيرادات</option>
+                                        <option value="51">41 - الإيرادات التشغيلية</option>
+                                        <option value="17">4101 - إيرادات المبيعات/ الخدمات</option>
+                                        <option value="53">42 - الإيرادات غير التشغيلية</option>
+                                        <option value="18">4201 - إيرادات أخرى</option>
+                                    </optgroup></select>
+
+                                    <div class="dropdown-menu open" style="max-height: 297.953px; overflow: hidden; min-height: 131px;">
+                                        <div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list" aria-activedescendant="bs-select-1-0"></div>
+                                        <div class="inner open" role="listbox" id="bs-select-1" tabindex="-1" style="max-height: 246.953px; overflow-y: auto; min-height: 80px;">
+                                            <ul class="dropdown-menu inner " role="presentation" style="margin-top: 0px; margin-bottom: 0px;">
+                                                <li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-1-0" tabindex="0" aria-setsize="94" aria-posinset="1" aria-selected="true"><span class="text">اسم الحساب</span></a></li>
+                                                <li class="divider optgroup-1div"></li>
+                                                <li class="dropdown-header optgroup-1"><span class="text">الاصول</span></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-3" tabindex="0" aria-setsize="94" aria-posinset="2"><span class="text">1 - الأصول</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-4" tabindex="0"><span class="text">11 - أصول متداولة</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-5" tabindex="0"><span class="text">1101 - النقد ومايعادله</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-6" tabindex="0"><span class="text">110101 - النقدية في الخزينة</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-7" tabindex="0"><span class="text">110102 - العهد النقدية</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-8" tabindex="0"><span class="text">110103 - حسين</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-9" tabindex="0"><span class="text">110104 - اتنانتا</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-10" tabindex="0"><span class="text">1102 - النقدية في البنك</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-11" tabindex="0"><span class="text">110201 - حساب البنك الجاري - اسم البنك</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-12" tabindex="0"><span class="text">110202 - الرياض</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-13" tabindex="0"><span class="text">1103 - المدينون</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-14" tabindex="0"><span class="text">1104 - مصروفات مقدمة</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-15" tabindex="0"><span class="text">110401 - تأمين طبي مقدم</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-16" tabindex="0"><span class="text">110402 - إيجار مقدم</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-17" tabindex="0"><span class="text">1105 - مدفوعات مقدمة للموظفين</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-18" tabindex="0"><span class="text">1106 - المخزون</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-19" tabindex="0"><span class="text">1107 - بابلا</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-20" tabindex="0"><span class="text">1109 - مصطفى</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-21" tabindex="0"><span class="text">1110 - مصطفي</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-22" tabindex="0"><span class="text">12 - أصول غير متداولة</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-23" tabindex="0"><span class="text">1201 - عقارات وآلات ومعدات</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-24" tabindex="0"><span class="text">120101 - الأراضي</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-25" tabindex="0"><span class="text">120102 - المباني</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-26" tabindex="0"><span class="text">120103 - المعدات</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-27" tabindex="0"><span class="text">120104 - أجهزة مكتبية وطابعات</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-28" tabindex="0"><span class="text">1202 - الأصول غير الملموسة</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-29" tabindex="0"><span class="text">1203 - العقارات الاستثمارية</span></a></li>
+                                                <li class="optgroup-1"><a role="option" class="dropdown-item opt" id="bs-select-1-30" tabindex="0"><span class="text">13 - اسماء</span></a></li>
+                                                <li class="divider optgroup-1div"></li>
+                                                <li class="dropdown-header optgroup-2"><span class="text">الالتزامات</span></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-33" tabindex="0"><span class="text">2 - الالتزامات</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-34" tabindex="0"><span class="text">21 - الالتزامات المتداولة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-35" tabindex="0"><span class="text">2101 - الدائنون</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-36" tabindex="0"><span class="text">2102 - مصروفات مستحقة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-37" tabindex="0"><span class="text">2103 - الرواتب المستحقة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-38" tabindex="0"><span class="text">2104 - قروض قصيرة الأجل</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-39" tabindex="0"><span class="text">2105 - ضريبة القيمة المضافة المستحقة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-40" tabindex="0"><span class="text">2106 - الضرائب المستحقة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-41" tabindex="0"><span class="text">2107 - إيرادات غير مكتسبة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-42" tabindex="0"><span class="text">2108 - مستحقات المؤسسة العامة للتأمينات الاجتماعية</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-43" tabindex="0"><span class="text">2109 - مجمع الاستهلاك</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-44" tabindex="0"><span class="text">210901 - مجمع استهلاك المباني</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-45" tabindex="0"><span class="text">210902 - مجمع استهلاك المعدات</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-46" tabindex="0"><span class="text">210903 - مجمع استهلاك أجهزة مكتبية وطابعات</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-47" tabindex="0"><span class="text">2110 - مخصص مكافأة نهاية الخدمة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-48" tabindex="0"><span class="text">22 - التزامات غير متداولة</span></a></li>
+                                                <li class="optgroup-2"><a role="option" class="dropdown-item opt" id="bs-select-1-49" tabindex="0"><span class="text">2201 - قروض طويلة أجل</span></a></li>
+                                                <li class="divider optgroup-2div"></li>
+                                                <li class="dropdown-header optgroup-3"><span class="text">المصاريف</span></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-52" tabindex="0"><span class="text">5 - المصاريف</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-53" tabindex="0"><span class="text">51 - التكاليف المباشرة</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-54" tabindex="0"><span class="text">5101 - تكلفة البضاعة المباعة</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-55" tabindex="0"><span class="text">5102 - رواتب وأجور</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-56" tabindex="0"><span class="text">5103 - عمولات البيع</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-57" tabindex="0"><span class="text">5104 - شحن وتخليص جمركي</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-58" tabindex="0"><span class="text">52 - التكاليف التشغيلية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-59" tabindex="0"><span class="text">5201 - الرواتب والرسوم الإدارية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-60" tabindex="0"><span class="text">5202 - تأمين طبي</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-61" tabindex="0"><span class="text">5203 - مصاريف تسويقية ودعائية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-62" tabindex="0"><span class="text">5204 - مصاريف الإيجار</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-63" tabindex="0"><span class="text">5205 - عمولات وحوافز</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-64" tabindex="0"><span class="text">5206 - تذاكر سفر</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-65" tabindex="0"><span class="text">5207 - التأمينات الاجتماعية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-66" tabindex="0"><span class="text">5208 - الرسوم الحكومية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-67" tabindex="0"><span class="text">5209 - رسوم واشتراكات</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-68" tabindex="0"><span class="text">5210 - مصاريف خدمات المكتب</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-69" tabindex="0"><span class="text">5211 - مصاريف مكتبية ومطبوعات</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-70" tabindex="0"><span class="text">5212 - مصاريف ضيافة</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-71" tabindex="0"><span class="text">5213 - عمولات بنكية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-72" tabindex="0"><span class="text">5214 - مصاريف أخرى</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-73" tabindex="0"><span class="text">5215 - مصاريف الإهلاك</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-74" tabindex="0"><span class="text">521501 - مصروف إهلاك المباني</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-75" tabindex="0"><span class="text">521502 - مصروف إهلاك المعدات</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-76" tabindex="0"><span class="text">521503 - مصروف إهلاك أجهزة مكتبية وطابعات</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-77" tabindex="0"><span class="text">5219 - مصروف نقل ومواصلات</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-78" tabindex="0"><span class="text">53 - مصاريف غير التشغيلية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-79" tabindex="0"><span class="text">5301 - الزكاة</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-80" tabindex="0"><span class="text">5302 - الضرائب</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-81" tabindex="0"><span class="text">5303 - ترجمة عملات أجنبية</span></a></li>
+                                                <li class="optgroup-3"><a role="option" class="dropdown-item opt" id="bs-select-1-82" tabindex="0"><span class="text">5304 - فوائد</span></a></li>
+                                                <li class="divider optgroup-3div"></li>
+                                                <li class="dropdown-header optgroup-4"><span class="text">حقوق الملاك</span></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-85" tabindex="0"><span class="text">3 - حقوق الملكية</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-86" tabindex="0"><span class="text">31 - رأس المال</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-87" tabindex="0"><span class="text">3101 - رأس المال المسجل</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-88" tabindex="0"><span class="text">3102 - رأس المال الإضافي المدفوع</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-89" tabindex="0"><span class="text">32 - حقوق ملكية أخرى</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-90" tabindex="0"><span class="text">3201 - أرصدة افتتاحية</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-91" tabindex="0"><span class="text">33 - احتياطيات</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-92" tabindex="0"><span class="text">3301 - احتياطي نظامي</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-93" tabindex="0"><span class="text">3302 - احتياطي ترجمة عملات أجنبية</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-94" tabindex="0"><span class="text">34 - الأرباح المبقاة (أو الخسائر)</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-95" tabindex="0"><span class="text">3401 - الأرباح والخسائر العاملة</span></a></li>
+                                                <li class="optgroup-4"><a role="option" class="dropdown-item opt" id="bs-select-1-96" tabindex="0"><span class="text">3402 - الأرباح المبقاة (أو الخسائر)</span></a></li>
+                                                <li class="divider optgroup-4div"></li>
+                                                <li class="dropdown-header optgroup-5"><span class="text">الايرادات</span></li>
+                                                <li class="optgroup-5"><a role="option" class="dropdown-item opt" id="bs-select-1-99" tabindex="0"><span class="text">4 - الإيرادات</span></a></li>
+                                                <li class="optgroup-5"><a role="option" class="dropdown-item opt" id="bs-select-1-100" tabindex="0"><span class="text">41 - الإيرادات التشغيلية</span></a></li>
+                                                <li class="optgroup-5"><a role="option" class="dropdown-item opt" id="bs-select-1-101" tabindex="0"><span class="text">4101 - إيرادات المبيعات/ الخدمات</span></a></li>
+                                                <li class="optgroup-5"><a role="option" class="dropdown-item opt" id="bs-select-1-102" tabindex="0"><span class="text">42 - الإيرادات غير التشغيلية</span></a></li>
+                                                <li class="optgroup-5"><a role="option" class="dropdown-item opt" id="bs-select-1-103" tabindex="0"><span class="text">4201 - إيرادات أخرى</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form_row">
+
+                                <div class="form_field ">
+                                    <div class="input-group mb-3">
+                                        <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="input-group-prepend">
+                                            <span class="datepicker-toggle">
+                                                <span class="datepicker-toggle-button"></span>
+                                            <input type="date" class="datepicker-input">
+                                            <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="form_row">
+
+                                <div class="form_field ">
+                                    <div class="input-group mb-3">
+                                        <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="input-group-prepend">
+                                            <span class="datepicker-toggle">
+                                                <span class="datepicker-toggle-button"></span>
+                                            <input type="date" class="datepicker-input">
+                                            <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="group-tow">
+                            <div class="form_row ">
+                                <div class="form_row selector-group-btn">
+                                    <div class="filter-dimension form_field input-group">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-sm" type="button">
+                                                <i class="fas fa-filter"></i>
+                                            </button>
+                                      </span>
+                                        <select name="query[filter][type]" id="q_filter_type" class="form-select form-select">
+                    <option value="">نوع التصفية</option>
+                    <optgroup label="حقول إضافية">
+                        <option value="مستورد من">مستورد من</option>
+                    </optgroup>
+                    <optgroup label="أخرى">
+                        <option value="Contact-1">العملاء</option>
+                        <option value="Contact-2">الموردين</option>
+                        <option value="Employee">الموظفين</option>
+                        <option value="Project">المشاريع</option>
+                        <option value="Product">المنتجات</option>
+                        <option value="Inventory">الفروع والمخازن</option>
+                    </optgroup>
+                </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form_row ">
+                                <select class="form-select form-select-sm" aria-label="Default select example">
+            <option value="" selected>خيارات التصفية</option>
+            <option value="" >No Reslut Found</option>
+          </select>
+                            </div>
+                        </div>
+
+                        <div class="form_row search  ">
+                            <input type="hidden" name="filter" id="filter" value="true">
+                            <button name="button" type="submit" class="btn filter-btn">
+                                <i class="fas fa-filter"></i> بحث</button>
+                            <a class="btn products-reset-btn">
+                                <i class="fa fa-undo"></i>إعادة تعيين
+                            </a>
+                        </div>
+                    </section>
+                </form>
+            </div>
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

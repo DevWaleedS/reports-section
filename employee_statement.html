@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-title" content="Qoyod - قيود">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- web page icon-->
+    <link href="assets/logo_57.png" sizes="57x57" rel="icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@200;400;600;800&family=Inconsolata:wght@700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awosome file-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--/normalize file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- style sheet file-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>دفتر الأستاذ</title>
+</head>
+
+<body class="emp-body">
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"> <a href="index.html">التقارير</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><i class="fa fa-angle-double-left client_primary_color"></i> <a href="#">دفتر الاستاذ</a> </li>
+        </ol>
+    </nav>
+
+
+    <div class="container">
+        <section class="content">
+            <div class="form-content">
+                <form class="form" action="#" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+                    <div class="form_row">
+                        <label for="">من</label>
+                        <div class="form_field ">
+                            <div class="input-group mb-3">
+                                <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <span class="datepicker-toggle">
+                                        <span class="datepicker-toggle-button"></span>
+                                    <input type="date" class="datepicker-input">
+                                    <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <label for="">إلى</label>
+                        <div class="form_field ">
+                            <div class="input-group mb-3">
+                                <input type="text" value="30-11-2021" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+                                    <span class="datepicker-toggle">
+                                        <span class="datepicker-toggle-button"></span>
+                                    <input type="date" class="datepicker-input">
+                                    <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></i></span>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="form_row ">
+                        <div class="form_field ">
+                            <div class="dropdown bootstrap-select bs3">
+                                <select name="query[depth]" id="query_depth" class="selectpicker">
+                        <option value="">المستويات</option>
+                        <option value="1">عرض نوع الحساب فقط</option>
+                        <option value="2">المستوى 2</option>
+                        <option value="3">المستوى 3</option>
+                        <option value="4">المستوى 4</option>
+                        <option value="5">المستوى 5</option>
+                        <option value="6">المستوى 6</option>
+                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_row search  ">
+                        <input type="hidden" name="filter" id="filter" value="true">
+                        <button name="button" type="submit" class="btn filter-btn">
+            <i class="fas fa-filter"></i> بحث</button>
+                        <a class="btn products-reset-btn">
+                            <i class="fa fa-undo"></i>إعادة تعيين
+                        </a>
+                    </div>
+                </form>
+                <br>
+
+
+
+                <div class="reports-checkbox">
+                    <input id="ytd_balance" type="checkbox" name="ytd">
+                    <label class="form-checkbox" for="ytd_balance"> عرض صافي الحركة للسنة المالية بتاريخ الرصيد الختامي</label>
+                </div>
+
+            </div>
+            <div class="reports-header text-center">
+                <h3>ملخص دفتر الأستاذ</h3>
+                <h6>eee</h6>
+                <h5>
+                    من <span>2021-01-01</span> إلى <span>2021-11-30</span>
+                </h5>
+            </div>
+
+            <table class="table table-responsive ">
+                <thead class="cf">
+                    <tr>
+                        <th colspan="3">الحساب</th>
+                        <th class="balance-ytd hide">
+                            الرصيد الإفتتاحي
+                        </th>
+                        <th>مدين</th>
+                        <th>دائن</th>
+                        <th>صافي الحركة</th>
+                        <th class="balance-ytd hide">
+                            الرصيد منذ بداية العام
+                        </th>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href="#"> 1 - الأصول</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-11" href="#">11 - أصول متداولة</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1101 " href="#">1101 - النقد ومايعادله</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1102 " href="#">110101 - النقدية في الخزينة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#"> 4,181.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/7?balance_type=credit&amp;filter_view=false">35,949.60 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement"> 31,768.60 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1102 " href="#">110102 - العهد النقدية</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#">2,010.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/41?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">2,010.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1102 " href="#">110103 - حسين</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#">1,000.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/88?balance_type=credit&amp;filter_view=false">1,380.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">380.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1102 " href="#">110104 - اتنانتا </a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/89?balance_type=credit&amp;filter_view=false">40.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">40.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1101" href="#">1101 - النقد ومايعادله</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="#"> 7,191.00 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/29?balance_type=credit&amp;filter_view=false"> 37,369.60 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">30,178.60 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1101" href="#">1102 - النقدية في البنك</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1102 " href="#">110201 - حساب البنك الجاري - اسم البنك</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/8?balance_type=credit&amp;filter_view=false">3,013.80 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">3,013.80 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1102 " href="#">110202 - الرياض</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/87?balance_type=credit&amp;filter_view=false">2,000.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement"> 2,000.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1101" href="#">1102 - النقدية في البنك</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href=""> 0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/52?balance_type=credit&amp;filter_view=false">5,013.80 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">5,013.80 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="#">1103 - المدينون</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#">592.25 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/9?balance_type=credit&amp;filter_view=false"> 585.00 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement">7.25 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102 " href="#">1104 - مصروفات مقدمة</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1103 " href="#">110401 - تأمين طبي مقدم</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س </td>
+                        <td data-title="Debit">
+                            <a href="">100.00 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/54?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">100.00 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="#">1104 - مصروفات مقدمة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س </td>
+                        <td data-title="Debit">
+                            <a href="">100.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/21?balance_type=credit&amp;filter_view=false"> 0.00 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement">100.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="#">1106 - المخزون</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س </td>
+                        <td data-title="Debit">
+                            <a href="">16,296.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="#"> 5,394.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement"> 10,902.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س </td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-11" href="#">11 - أصول متداولة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#"> 24,179.25 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/5?balance_type=credit&amp;filter_view=false"> 48,362.40 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement"> 24,183.15 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-11 " href="#">12 - أصول غير متداولة</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102 " href="#">1201 - عقارات وآلات ومعدات</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-4">
+                            <a class="padding-1103" href="#">120103 - المعدات</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="#">5,220.00 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/3?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">
+                            5,220.00 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102 " href="#">1201 - عقارات وآلات ومعدات</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="#">5,220.00 ر.س  </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/64?balance_type=credit&amp;filter_view=false"> 0.00 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement"> 5,220.00 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س </td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-11" href="#">12 - أصول غير متداولة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="#">5,220.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/20?balance_type=credit&amp;filter_view=false"> 0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">5,220.00 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س </td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href="#"> 1 - الأصول </a></td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#">29,399.25 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/4?balance_type=credit&amp;filter_view=false"> 48,362.40 ر.س </td>
+        <td data-title="Net Movement">18,963.15 ر.س
+        </td>
+        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+    </tr>
+    <tr>
+        <td data-title="Account" colspan="3" class="padleftindex-1">
+            <a class="" href="#">2 - الالتزامات</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-11" href="#">21 - الالتزامات المتداولة</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="#">2101 - الدائنون </a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#"> 39,243.40 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/14?balance_type=credit&amp;filter_view=false">39,243.40 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement">0.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href=""> 2105 - ضريبة القيمة المضافة المستحقة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س </td>
+                        <td data-title="Debit">
+                            <a href="">4,727.40 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/19?balance_type=credit&amp;filter_view=false"> 77.25 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">4,650.15 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س </td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href=""> 21 - الالتزامات المتداولة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="/tenant/reports/general_ledgers/25">43,970.80 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/25?balance_type=credit&amp;filter_view=false">39,320.65 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">4,650.15 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href=""> 2 - الالتزامات</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="/tenant/reports/general_ledgers/24">43,970.80 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/24?balance_type=credit&amp;filter_view=false">39,320.65 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">4,650.15 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href=""> 3 - حقوق الملكية </a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href="">31 - رأس المال</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="">3101 - رأس المال المسجل</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/15?balance_type=credit&amp;filter_view=false">3,566.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">3,566.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href="">31 - رأس المال </a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">0.00 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/40?balance_type=credit&amp;filter_view=false">3,566.00 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement"> 3,566.00 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href="">3 - حقوق الملكية</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href=""> 0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/39?balance_type=credit&amp;filter_view=false">3,566.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">
+                            3,566.00 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href=""> 4 - الإيرادات </a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href=""> 41 - الإيرادات التشغيلية </a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="">4101 - إيرادات المبيعات/ الخدمات</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="/tenant/reports/general_ledgers/17">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/17?balance_type=credit&amp;filter_view=false">515.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">515.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href=""> 41 - الإيرادات التشغيلية</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/51?balance_type=credit&amp;filter_view=false"> 515.00 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement"> 515.00 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href=""> 4 - الإيرادات</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/50?balance_type=credit&amp;filter_view=false">515.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement"> 515.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href="">5 - المصاريف</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href=""> 51 - التكاليف المباشرة</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href="">5101 - تكلفة البضاعة المباعة </a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">10,012.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/12?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">
+                            10,012.00 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href=""> 5102 - رواتب وأجور</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide"> 0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="">3,000.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/58?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement"> 3,000.00 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س </td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href="/tenant/reports/general_ledgers/56/account_summary?filter_account=false"> 51 - التكاليف المباشرة</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س </td>
+                        <td data-title="Debit">
+                            <a href="">13,012.00 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/56?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">13,012.00 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href="">52 - التكاليف التشغيلية</a>
+                        </td>
+                        <td class="hide balance-ytd"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="balance-ytd hide"></td>
+                    </tr>
+                    <tr>
+                        <td data-title="Account" colspan="3" class="padleftindex-3">
+                            <a class="padding-1102" href=""> 5214 - مصاريف أخرى</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="">5,382.00 ر.س </a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/74?balance_type=credit&amp;filter_view=false"> 0.00 ر.س </a>
+                        </td>
+                        <td data-title="Net Movement"> 5,382.00 ر.س </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-2">
+                            <a class="padding-1101" href="">52 - التكاليف التشغيلية</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            <a href="#">5,382.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/60?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">5,382.00 ر.س</td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">0.00 ر.س</td>
+                    </tr>
+                    <tr class="dark-row">
+                        <td data-title="Account" colspan="3" class="padleftindex-1">
+                            <a class="" href="#">5 - المصاريف</a>
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">0.00 ر.س</td>
+                        <td data-title="Debit">
+                            <a href="#">18,394.00 ر.س</a>
+                        </td>
+                        <td data-title="Credit">
+                            <a href="/tenant/reports/general_ledgers/55?balance_type=credit&amp;filter_view=false">0.00 ر.س</a>
+                        </td>
+                        <td data-title="Net Movement">
+                            18,394.00 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                    </tr>
+                    <tr class="reports-total">
+                        <td data-title="Account" colspan=" 3">
+                            المجموع
+                        </td>
+                        <td data-title="Opening Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                        <td data-title="Debit">
+                            91,764.05 ر.س
+                        </td>
+                        <td data-title="Credit">
+                            91,764.05 ر.س
+                        </td>
+                        <td data-title="Net Movement">
+                            46,088.30 ر.س
+                        </td>
+                        <td data-title="YTD Balance" class="balance-ytd hide">
+                            0.00 ر.س
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="report-bottom">
+
+
+
+                <a href="/tenant/reports/general_ledgers.xlsx?detail=true" class="send">
+        تصدير دفتر الأستاذ بالتفصيل إلى Excel
+</a>
+
+
+
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">تصدير</button>
+                    <ul class="dropdown-menu text-right" style="min-width: 100px;" aria-labelledby="dropdownMenuButton1">
+                        <li style="text-align: right;">
+                            <a class="dropdown-item" href="#"><img src="assets/Exel_icon.png" alt=""> اكسل</a>
+                        </li>
+                        <li style="text-align: right;">
+                            <a class="dropdown-item" href="#"><img src="assets/pdf_Icon.png" alt=""> PDF</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
